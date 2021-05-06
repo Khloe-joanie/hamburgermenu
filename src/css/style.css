@@ -1,0 +1,131 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  letter-spacing: 1px;
+  overflow-x: hidden;
+  padding-bottom: 0;
+}
+
+@font-face {
+  font-family: "Romantica Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Romantica Regular"), url("Romantica-RpXpW.woff") format("woff");
+}
+
+.home,
+.about,
+.ourstaff,
+.contact {
+  display: flex;
+  height: 90vh;
+  text-align: center;
+  justify-content: center;
+  font-size: 7rem;
+  align-items: center;
+  /* font-family: "Romantica Regular"; */
+  /* top: -50%; */
+  /* color: white; */
+}
+
+.navbar {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 1rem;
+  font-size: 3rem;
+  background: none;
+  color: rgb(251, 94, 0);
+}
+
+.menu-bars:hover {
+  color: rgb(251, 94, 0);
+}
+
+.nav-menu {
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  top: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  top: 0;
+  transition-timing-function: ease-in-out;
+}
+
+.closing {
+  float: right;
+}
+
+.nav-text {
+  display: flex;
+  /* justify-content: right; */
+  align-items: center;
+  /* padding: 8px 0px 8px 16px; */
+  list-style-type: none;
+  line-height: 5em;
+}
+.nav-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  /* align-items: center; */
+  text-align: center;
+  padding: 0;
+}
+
+.nav-text a:hover {
+  border-bottom: 2px solid rgb(251, 94, 0);
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+.navbar-toogle {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+/*Navbar*/
+
+/*@Media*/
+@media only screen and (max-width: 375px) {
+  .calc {
+    font-size: 2em;
+    padding: 1px;
+    padding-top: 1em !important;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .calc {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .calc {
+    font-size: 1.7em;
+  }
+}
+/*@Media*/
