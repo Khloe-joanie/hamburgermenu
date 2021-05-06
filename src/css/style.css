@@ -21,7 +21,7 @@ body {
 
 /* pages */
 .pag {
-  font-size: 10em;
+  font-size: 10em !important;
 }
 
 .home,
