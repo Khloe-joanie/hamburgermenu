@@ -10,7 +10,7 @@ class OurStaff extends Component {
   render() {
     return (
       <div className="ourstaff">
-        <h1>Our Staff</h1>
+        <h1 className="pag">Our Staff</h1>
       </div>
     );
   }

@@ -19,6 +19,11 @@ body {
   src: local("Romantica Regular"), url("Romantica-RpXpW.woff") format("woff");
 }
 
+/* pages */
+.pag {
+  font-size: 10em;
+}
+
 .home,
 .about,
 .ourstaff,
@@ -27,14 +32,13 @@ body {
   height: 90vh;
   text-align: center;
   justify-content: center;
-  font-size: 7rem;
   align-items: center;
-  /* font-family: "Romantica Regular"; */
-  /* top: -50%; */
   background-color: black;
   color: white;
 }
+/* pages */
 
+/* Navbar */
 .navbar {
   background-color: black;
   height: 100px;
@@ -110,23 +114,3 @@ body {
   align-items: center;
 }
 /*Navbar*/
-
-/*@Media*/
-@media only screen and (max-width: 375px) {
-  .calc {
-    font-size: 2em;
-    padding: 1px;
-    padding-top: 1em !important;
-  }
-}
-@media only screen and (max-width: 780px) {
-  .calc {
-    font-size: 3em;
-  }
-}
-@media only screen and (max-width: 414px) {
-  .calc {
-    font-size: 1.7em;
-  }
-}
-/*@Media*/
