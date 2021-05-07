@@ -22,17 +22,22 @@ body {
 /* pages */
 .pag {
   font-size: 10em !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home,
 .about,
 .ourstaff,
 .contact {
-  display: flex;
-  height: 90vh;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  height: 100vh;
+  width: 100vw;
+  /* text-align: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: black;
   color: white;
 }
@@ -68,6 +73,7 @@ body {
   top: 0;
   top: -100%;
   transition: 850ms;
+  z-index: 999;
 }
 
 .nav-menu.active {
@@ -96,6 +102,7 @@ body {
   /* align-items: center; */
   text-align: center;
   padding: 0;
+  border-bottom: 2px solid white;
 }
 
 .nav-text a:hover {
@@ -104,6 +111,7 @@ body {
 
 .nav-menu-items {
   width: 100%;
+  list-style-type: none;
 }
 .navbar-toogle {
   background-color: white;
