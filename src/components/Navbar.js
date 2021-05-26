@@ -13,15 +13,22 @@ function Navbar() {
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
-      <div className="navbar">
-        <Link to="#" className="menu-bars">
-          <FaIcons.FaBars onClick={showSidebar} />
-        </Link>
-      </div>
+      <Link onClick={showSidebar} to="#" className="menu-bars">
+        {/* <FaIcons.FaBars /> */}
+        <div className="menu-icon">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+      </Link>
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
-        <ul className="nav-menu-items" onClick={showSidebar}>
-          <li className="navbar-toggle">
-            <Link to="#" className="menu-bars navbar">
+        <ul
+          className="nav-menu-items"
+          onClick={showSidebar}
+          style={{ paddingTop: "5em" }}
+        >
+          <li className="navbar-toggle" style={{ marginBottom: "1em" }}>
+            <Link to="#" className="menu-bars">
               <AiIcons.AiOutlineClose />
             </Link>
           </li>
