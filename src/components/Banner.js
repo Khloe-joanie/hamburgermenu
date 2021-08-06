@@ -19,7 +19,7 @@ class Banner extends Component {
           backgroundAttachment: "fixed",
         }}
       >
-        ,<h1 className="pag">{this.props.text}</h1>
+        <h1 className="pag">{this.props.text}</h1>
       </div>
     );
   }
