@@ -1,6 +1,7 @@
 /** @format */
 
 import React, { Component } from "react";
+import Banner from "../components/Banner";
 
 class Contact extends Component {
   constructor(props) {
@@ -9,9 +10,12 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div className="contact">
-        <h1 className="pag">Contacts</h1>
-      </div>
+      <>
+        <Banner
+          text="Contact"
+          imgUrl="https://wallpapercave.com/wp/iYiwmW8.jpg"
+        />
+      </>
     );
   }
 }
